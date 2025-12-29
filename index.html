@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osama Hamdi | Full-Stack .NET Developer</title>
+  <meta name="description" content="Osama Hamdi - Junior Full-Stack .NET Developer specializing in C#, SQL Server, and modern web technologies">
+  <meta name="keywords" content="Osama Hamdi, .NET Developer, C#, SQL Server, Full-Stack Developer, Egypt">
+  <meta name="author" content="Osama Hamdi">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- GSAP Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">OH</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">Osama</span>
+        <span class="logo-dot">.</span>
+      </a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="mailto:osamahamdi056@gmail.com" class="nav-cta">
+          <span>Hire Me</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="hero-gradient"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-particles" id="particles"></div>
+      </div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-circle pulse"></i>
+            <span>Available for opportunities</span>
+          </div>
+          
+          <h1 class="hero-title">
+            <span class="hero-greeting">Hello, I'm</span>
+            <span class="hero-name">
+              <span class="name-first">Osama</span>
+              <span class="name-last">Hamdi</span>
+            </span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            <span class="typing-wrapper">
+              <span class="typing-text" id="typing"></span>
+              <span class="typing-cursor">|</span>
+            </span>
+          </p>
+          
+          <p class="hero-description">
+            Passionate about building efficient and reliable applications with strong expertise in 
+            <span class="highlight">C#</span>, <span class="highlight">.NET</span> and 
+            <span class="highlight">SQL Server</span>
+          </p>
+          
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <span>Get In Touch</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <span>View My Work</span>
+              <i class="fas fa-arrow-down"></i>
+            </a>
+          </div>
+          
+          <div class="hero-social">
+            <a href="mailto:osamahamdi056@gmail.com" class="social-link" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/osamahamdi-fullstack/" target="_blank" class="social-link" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/osamahm1" target="_blank" class="social-link" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="profile-image-wrapper">
+            <div class="profile-image-border"></div>
+            <div class="profile-image-glow"></div>
+            <img src="Me.jpg" alt="Osama Hamdi" class="profile-image">
+          </div>
+          
+          <div class="floating-icons">
+            <div class="float-icon icon-1"><i class="fab fa-microsoft"></i></div>
+            <div class="float-icon icon-2"><i class="fas fa-database"></i></div>
+            <div class="float-icon icon-3"><i class="fab fa-python"></i></div>
+            <div class="float-icon icon-4"><i class="fab fa-git-alt"></i></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+          <h2 class="section-title">Know Who I Am</h2>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-content">
+            <h3 class="about-subtitle">
+              A passionate developer crafting <span class="gradient-text">digital solutions</span>
+            </h3>
+            <p class="about-text">
+              I'm <strong>Osama Hamdi</strong>, a Junior Full-Stack .NET Developer based in 
+              <span class="highlight">Damietta, Egypt</span>. Currently pursuing my Computer Science 
+              degree at Damietta University with a GPA of <strong>3.39</strong>.
+            </p>
+            <p class="about-text">
+              I specialize in building efficient, scalable applications using modern technologies. 
+              My experience includes developing console applications with Visual Studio using C# and C++, 
+              and I'm constantly expanding my skills in web development.
+            </p>
+            <p class="about-text">
+              Preparing for <strong>ECPC</strong> has significantly sharpened my problem-solving abilities. 
+              I'm eager to contribute to dynamic teams where I can grow and deliver impactful solutions.
+            </p>
+            
+            <div class="about-info">
+              <div class="info-item">
+                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>Damietta, Egypt</span>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                <span>CS @ Damietta University</span>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fas fa-briefcase"></i></div>
+                <span>DEPI Intern</span>
+              </div>
+            </div>
+            
+            <a href="#contact" class="btn btn-primary">
+              <span>Let's Talk</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+              <div class="stat-info">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-code"></i></div>
+              <div class="stat-info">
+                <span class="stat-number">6+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-star"></i></div>
+              <div class="stat-info">
+                <span class="stat-number">3.39</span>
+                <span class="stat-label">GPA Score</span>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+              <div class="stat-info">
+                <span class="stat-number">1</span>
+                <span class="stat-label">Internship</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-cogs"></i> My Skills</span>
+          <h2 class="section-title">Technical Expertise</h2>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                <div class="skill-details">
+                  <div class="skill-header">
+                    <span class="skill-name">C# / .NET</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 90%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <div class="skill-details">
+                  <div class="skill-header">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 80%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <div class="skill-details">
+                  <div class="skill-header">
+                    <span class="skill-name">C++</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 75%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Database -->
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-database"></i>
+              <h3>Database & Backend</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <div class="skill-details">
+                  <div class="skill-header">
+                    <span class="skill-name">SQL Server</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 85%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                <div class="skill-details">
+                  <div class="skill-header">
+                    <span class="skill-name">.NET Framework</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Web Development -->
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-globe"></i>
+              <h3>Web Development</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <div class="skill-details">
+                  <div class="skill-header">
+                    <span class="skill-name">HTML5</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 80%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <div class="skill-details">
+                  <div class="skill-header">
+                    <span class="skill-name">CSS3</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 75%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                <div class="skill-details">
+                  <div class="skill-header">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tools -->
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-tools"></i>
+              <h3>Tools & Others</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                <div class="skill-details">
+                  <div class="skill-header">
+                    <span class="skill-name">Git & GitHub</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 80%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                <div class="skill-details">
+                  <div class="skill-header">
+                    <span class="skill-name">Visual Studio</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-folder-open"></i> My Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Project 1: Arcade E-Commerce -->
+          <article class="project-card featured">
+            <div class="project-image">
+              <img src="Arcade.jpg" alt="Arcade E-Commerce" class="project-img">
+              <div class="project-overlay">
+                <a href="https://github.com/el-hassan-taha/arcade" target="_blank" class="project-btn">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span>ASP.NET MVC</span>
+                <span>C#</span>
+                <span>SQL Server</span>
+                <span>Entity Framework</span>
+              </div>
+              <h3 class="project-title">Arcade Electronics E-Commerce</h3>
+              <p class="project-desc">
+                Full-stack e-commerce platform built with ASP.NET MVC. Features include user authentication, 
+                product catalog with filtering & search, shopping cart, order management, and admin dashboard. 
+                Built as part of DEPI initiative with a team of 6 developers.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Cookie-based Auth</span>
+                <span><i class="fas fa-check"></i> Repository Pattern</span>
+                <span><i class="fas fa-check"></i> Admin Panel</span>
+              </div>
+              <div class="project-footer">
+                <span class="project-date"><i class="far fa-calendar"></i> 2025</span>
+                <span class="project-type"><i class="fas fa-users"></i> Team (6 members)</span>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Project 2: SHA-3 Visualizer -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="Sha-3 .jpg" alt="SHA-3 Visualizer" class="project-img">
+              <div class="project-overlay">
+                <a href="https://github.com/mohamedalaa-off/SHA-3_Website" target="_blank" class="project-btn">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://6xko-sha3.netlify.app/" target="_blank" class="project-btn">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>Cryptography</span>
+                <span>GSAP</span>
+              </div>
+              <h3 class="project-title">SHA-3 / Keccak Visualizer</h3>
+              <p class="project-desc">
+                Interactive educational platform that visualizes the SHA-3 cryptographic hash function. 
+                Features live simulation of the Keccak sponge function with 5×5×64-bit state visualization, 
+                step-by-step documentation, and animated permutation rounds (θ/ρ/π/χ/ι).
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Live Simulation</span>
+                <span><i class="fas fa-check"></i> SHA3-224/256/384/512</span>
+                <span><i class="fas fa-check"></i> SHAKE128/256</span>
+              </div>
+              <div class="project-footer">
+                <span class="project-date"><i class="far fa-calendar"></i> 2025</span>
+                <span class="project-type"><i class="fas fa-user"></i> Research Project</span>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Project 3: Algorithm Comparison -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="Greedy vs DP.jpg" alt="DP vs Greedy Algorithms" class="project-img">
+              <div class="project-overlay">
+                <a href="https://github.com/osamahm1/Algorithm-DP-vs-Greedy-" target="_blank" class="project-btn">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>Algorithms</span>
+                <span>Data Structures</span>
+              </div>
+              <h3 class="project-title">DP vs Greedy Algorithms</h3>
+              <p class="project-desc">
+                Interactive comparison platform demonstrating Dynamic Programming vs Greedy algorithms. 
+                Visualizes Dijkstra vs Bellman-Ford for shortest paths, and Weighted Interval Scheduling 
+                for job scheduling. Includes step-by-step execution and complexity analysis.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Graph Visualization</span>
+                <span><i class="fas fa-check"></i> Step-by-Step</span>
+                <span><i class="fas fa-check"></i> 4 Algorithms</span>
+              </div>
+              <div class="project-footer">
+                <span class="project-date"><i class="far fa-calendar"></i> 2025</span>
+                <span class="project-type"><i class="fas fa-graduation-cap"></i> Course Project</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        
+        <div class="projects-cta">
+          <a href="https://github.com/osamahm1" target="_blank" class="btn btn-secondary">
+            <span>View All on GitHub</span>
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-graduation-cap"></i> Background</span>
+          <h2 class="section-title">Education & Experience</h2>
+        </div>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-date">2023 - 2027</span>
+                <span class="timeline-badge">Current</span>
+              </div>
+              <h3 class="timeline-title">Bachelor's in Computer Science</h3>
+              <p class="timeline-place">Damietta University, Faculty of Computer Science</p>
+              <p class="timeline-desc">
+                Pursuing my degree focusing on software development, algorithms, and data structures. 
+                Maintaining a strong academic record with practical project experience.
+              </p>
+              <div class="timeline-highlight">
+                <i class="fas fa-star"></i> GPA: 3.39
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-date">June 2025 - Dec 2025</span>
+                <span class="timeline-badge internship">Internship</span>
+              </div>
+              <h3 class="timeline-title">.NET Development Internship</h3>
+              <p class="timeline-place">DEPI - Egypt Pioneers Initiative</p>
+              <p class="timeline-desc">
+                Hands-on experience applying C# and SQL Server in real project environments. 
+                Working on practical .NET development tasks and team collaboration.
+              </p>
+              <ul class="timeline-list">
+                <li><i class="fas fa-check"></i> Applied C# and SQL in real projects</li>
+                <li><i class="fas fa-check"></i> Training on practical .NET tasks</li>
+                <li><i class="fas fa-check"></i> Team collaboration experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-envelope"></i> Get In Touch</span>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="section-desc">
+            I'm currently looking for new opportunities. Feel free to reach out!
+          </p>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a href="mailto:osamahamdi056@gmail.com" class="contact-card clickable">
+              <div class="contact-icon email-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email Me</h4>
+                <span>osamahamdi056@gmail.com</span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+            
+            <a href="tel:+201274626776" class="contact-card clickable">
+              <div class="contact-icon phone-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Call Me</h4>
+                <span>+20 127 462 6776</span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+            
+            <div class="contact-card">
+              <div class="contact-icon location-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <span>Damietta, Egypt</span>
+              </div>
+            </div>
+            
+            <div class="contact-social-card">
+              <h4>Connect With Me</h4>
+              <div class="social-links-row">
+                <a href="https://github.com/osamahm1" target="_blank" class="social-btn-large" title="GitHub">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/osamahamdi-fullstack/" target="_blank" class="social-btn-large" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="mailto:osamahamdi056@gmail.com" class="social-btn-large" title="Email">
+                  <i class="fas fa-envelope"></i>
+                  <span>Email</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-cta">
+            <div class="cta-card">
+              <div class="cta-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3>Ready to start a project?</h3>
+              <p>Let's discuss how I can help bring your ideas to life.</p>
+              <a href="mailto:osamahamdi056@gmail.com" class="btn btn-primary btn-large cta-btn">
+                <span>Send me an email</span>
+                <i class="fas fa-paper-plane"></i>
+              </a>
+              <div class="cta-decoration">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="logo-text">Osama</span>
+            <span class="logo-dot">.</span>
+          </a>
+          <p>Building digital solutions with passion.</p>
+        </div>
+        
+        <div class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://github.com/osamahm1" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/osamahamdi-fullstack/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:osamahamdi056@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Osama Hamdi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
